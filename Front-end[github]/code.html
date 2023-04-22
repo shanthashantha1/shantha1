@@ -1,0 +1,44 @@
+
+<!DocTYPE html>
+<html>
+<head>
+    <title>adding two numbers</title>
+    <h1>welcome</h1>
+
+</head>
+<body><br>
+
+    <select id="vegetable">
+
+        <option value="">-vegetable-</option>
+        <option value="10">Item 1 - 10</option>
+        <option value="20">Item 2 - 20</option>
+      </select>
+      
+      <select id="fruit">
+      
+        <option value="">-fruits-</option>
+        <option value="15">Item 1 - 15</option>
+        <option value="25">Item 2 - 25</option>
+      </select>
+      
+      <p id="result"></p>
+      
+      <script>
+        const vegetable = document.getElementById("vegetable");
+        const fruit = document.getElementById("fruit");
+        const result = document.getElementById("result");
+      
+        function calculateTotal() {
+          const total = parseInt(vegitable.value) + parseInt(fruit.value);
+          result.innerHTML = "Total: rp" + total;
+        }
+      
+        vegitable.addEventListener("change", calculateTotal);
+        fruit.addEventListener("change", calculateTotal);
+      </script>
+
+
+</body><br>
+
+</html>
